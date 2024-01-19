@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- ! _____________ Navbar start _____________ -->
+    <nav class="navbar">
+      <!-- todo _____________ Navbar left _____________ -->
+      <div class="navbar__left">
+        <a href="index.html" class="logo">
+          <img src="./assets/images/linkedinlogo.png" />
+        </a>
+        <div class="search__box">
+          <img src="./assets/images/magnifier_search_zoom_icon.png" alt="" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+      <!-- todo _____________ Navbar center _____________ -->
+      <div class="navbar__center">
+        <ul>
+          <li>
+            <a href="#" class="active__link"
+              ><img src="./assets/images/home.png" /><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/images/network.png" /><span
+                >My Network</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/images/jobs.png" /><span> Jobs </span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/images/message.png" /><span>
+                Messaging</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/images/notification.png" /><span>
+                Notifications
+              </span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- todo _____________ Navbar right _____________ -->
+      <div class="navbar__right">
+        <div class="online">
+          <img
+            src="./assets/images/gowtham-profile.png"
+            class="nav__profile__img"
+            onclick="toggleMenu()"
+          />
+        </div>
+      </div>
+      <!-- todo  ________________ profile dropdown menu ________________ -->
+      <div class="profile__menu__wrap" id="profileMenu">
+        <div class="profile__menu">
+          <div class="user__info">
+            <a href="./profile.html">
+              <img src="./assets/images/gowtham-profile.png" />
+            </a>
+            <!-- <img src="./assets/images/gowtham-profile.png" /> -->
+            <div>
+              <h3>Gowtham</h3>
+              <a href="./profile.html">See your profile</a>
+            </div>
+          </div>
+          <hr />
+          <a href="#" class="profile__menu__link">
+            <img src="./assets/images/feedback.png" />
+            <p>Give Feedback</p>
+            <span> > </span>
+          </a>
+          <a href="#" class="profile__menu__link">
+            <img src="./assets/images/setting.png" />
+            <p>Settings & privacy</p>
+            <span> > </span>
+          </a>
+          <a href="#" class="profile__menu__link">
+            <img src="./assets/images/help.png" />
+            <p>Help & Support</p>
+            <span> > </span>
+          </a>
+          <a href="#" class="profile__menu__link">
+            <img src="./assets/images/display.png" />
+            <p>Display & Accessibility</p>
+            <span> > </span>
+          </a>
+          <a href="#" class="profile__menu__link">
+            <img src="./assets/images/logout.png" />
+            <p>Logout</p>
+            <span> ></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- ! ____________ Navbar end ___________ -->
+    <!-- ! _________ container section __________ -->
+    <div class="container">
+      <!-- todo ____________ left-sidebar _____________ -->
+      <div class="left__sidebar">
+        <div class="sidebar__profile__box">
+          <img src="./assets/images/profile-cover.png" width="100%" />
+          <div class="sidebar__profile__info">
+            <img src="./assets/images/gowtham-profile.png" />
+            <h1>Gowtham</h1>
+            <h3>Frontend Developer</h3>
+            <ul>
+              <li>Your profile views <span>52</span></li>
+              <li>Your post views <span>810</span></li>
+              <li>Your connections <span>205</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="sidebar__profile__link">
+          <a href="#"><img src="./assets/images/items.png" alt="" />My items</a>
+          <a href="#"
+            ><img src="./assets/images/premium.png" alt="" />Try Premium</a
+          >
+        </div>
+        <!-- todo __________  sidebar__activity _________-->
+        <div class="sidebar__activity" id="sidebarActivity">
+          <h3>Recent</h3>
+          <a href=""><img src="./assets/images/recent.png" />Web Development</a
+          ><a href=""><img src="./assets/images/recent.png" />User Interface</a
+          ><a href=""><img src="./assets/images/recent.png" />Online Learning</a
+          ><a href=""><img src="./assets/images/recent.png" />Learn Online</a
+          ><a href=""><img src="./assets/images/recent.png" />Code Better</a
+          ><a href=""><img src="./assets/images/recent.png" />Group Learing</a>
+          <h3>Groups</h3>
+          <a href="#"
+            ><img src="./assets/images/group.png" />Web Design Group</a
+          >
+          <a href="#"
+            ><img src="./assets/images/group.png" />HTMl & CSS Learners</a
+          >
+          <a href="#"
+            ><img src="./assets/images/group.png" />Python & Javascript Group</a
+          >
+          <a href="#"
+            ><img src="./assets/images/group.png" />Learn Coding Online</a
+          >
+          <h3>HASHTAG</h3>
+          <a href=""><img src="./assets/images/hashtag.png" />WebDevelopment</a>
+          <a href=""><img src="./assets/images/hashtag.png" />UserInterface</a>
+          <a href=""
+            ><img src="./assets/images/hashtag.png" /> OnlineLearning</a
+          >
+          <div class="discover__more__link">
+            <a href="#">Discover More</a>
+          </div>
+        </div>
+        <p id="showMoreLink" onclick="toggleActivity()">Show More <b>+</b></p>
+      </div>
+      <!-- ! main-content -->
+      <div class="main__content">
+        <!-- todo  ______ create post __________ -->
+        <div class="create__post">
+          <img src="./assets/images/gowtham-post.jpg" alt="" />
+          <div class="create__post__input">
+            <img src="./assets/images/gowtham-profile.png" alt="" />
+            <textarea rows="2" placeholder="Write a post"></textarea>
+          </div>
+          <div class="create__post__links">
+            <li><img src="./assets/images/photo.png" /></li>
+            <li><img src="./assets/images/video.png" /></li>
+            <li><img src="./assets/images/event.png" /></li>
+            <li>Post</li>
+          </div>
+        </div>
+        <!-- todo  __________sort-by_________   -->
+        <div class="sort__by">
+          <hr />
+          <p>
+            Sort by:
+            <span>top <img src="./assets/images/down-arrow.png" alt="" /></span>
+          </p>
+        </div>
+        <!-- todo  __________post_________   -->
+        <div class="post">
+          <div class="post__author">
+            <img src="./assets/images/user-3.png" />
+            <div>
+              <h1>Benjamin Leo</h1>
+              <small>Founder and CEO at Gellelio Group | Angel Invester</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>
+            Success is the state or condition of meeting a defined range of
+            expectations. It may be viewed as the opposite of failure. The
+            criteria for success depend on context, and may be relative to a
+            particular observer or belief system. One person might consider a
+            success what another person considers a failure, particularly in
+            cases of direct competition or a zero-sum game.
+          </p>
+          <img src="./assets/images/post-image-1.png" width="100%" />
+          <!-- todo  __________ post-status _________   -->
+          <div class="post__status">
+            <div>
+              <img src="./assets/images/thumbsup.png" /><img
+                src="./assets/images/love.png"
+              /><img src="./assets/images/clap.png" />
+              <span class="liked__users">Abhinav Mishra and 75 others</span>
+            </div>
+            <div>
+              <span>22 comments &middot; 40 shares </span>
+            </div>
+          </div>
+          <!-- todo  __________ post-activity _________   -->
+          <div class="post__activity">
+            <div>
+              <img
+                src="./assets/images/user-1.png"
+                class="post__activity__user__icon"
+              />
+              <img
+                src="./assets/images/down-arrow.png"
+                class="post__activity__arrow__icon"
+              />
+            </div>
+            <div class="post__activity__link">
+              <img src="./assets/images/like.png" />
+              <span>Like</span>
+            </div>
+            <div class="post__activity__link">
+              <img src="./assets/images/comment.png" />
+              <span>Comment</span>
+            </div>
+            <div class="post__activity__link">
+              <img src="./assets/images/share.png" />
+              <span>Share</span>
+            </div>
+            <div class="post__activity__link">
+              <img src="./assets/images/send.png" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post__author">
+            <img src="./assets/images/user-4.png" />
+            <div>
+              <h1>clarence George</h1>
+              <small>Founder and CEO at Gellelio Group | Angel Invester</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>
+            Success is the state or condition of meeting a defined range of
+            expectations. It may be viewed as the opposite of failure. The
+            criteria for success depend on context, and may be relative to a
+            particular observer or belief system. One person might consider a
+            success what another person considers a failure, particularly in
+            cases of direct competition or a zero-sum game.
+          </p>
+          <img src="./assets/images/post-image-2.png" width="100%" />
+          <!-- todo  __________ post-status _________   -->
+
+          <div class="post__status">
+            <div>
+              <img src="./assets/images/thumbsup.png" /><img
+                src="./assets/images/love.png"
+              /><img src="./assets/images/clap.png" />
+              <span class="liked__users">Abhinav Mishra and 75 others</span>
+            </div>
+            <div>
+              <span>22 comments &middot; 40 shares </span>
+            </div>
+          </div>
+          <!-- todo  __________ post-activity _________   -->
+          <div class="post__activity">
+            <div>
+              <img
+                src="./assets/images/user-1.png"
+                class="post__activity__user__icon"
+              />
+              <img
+                src="./assets/images/down-arrow.png"
+                class="post__activity__arrow__icon"
+              />
+            </div>
+            <div class="post__activity__link">
+              <img src="./assets/images/like.png" />
+              <span>Like</span>
+            </div>
+            <div class="post__activity__link">
+              <img src="./assets/images/comment.png" />
+              <span>Comment</span>
+            </div>
+            <div class="post__activity__link">
+              <img src="./assets/images/share.png" />
+              <span>Share</span>
+            </div>
+            <div class="post__activity__link">
+              <img src="./assets/images/send.png" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post__author">
+            <img src="./assets/images/user-5.png" />
+            <div>
+              <h1>Steve Greg</h1>
+              <small>Founder and CEO at Gellelio Group | Angel Invester</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>
+            Success is the state or condition of meeting a defined range of
+            expectations. It may be viewed as the opposite of failure. The
+            criteria for success depend on context, and may be relative to a
+            particular observer or belief system. One person might consider a
+            success what another person considers a failure, particularly in
+            cases of direct competition or a zero-sum game.
+          </p>
+          <img src="./assets/images/post-image-3.png" width="100%" />
+          <!-- todo  __________ post-status _________   -->
+
+          <div class="post__status">
+            <div>
+              <img src="./assets/images/thumbsup.png" /><img
+                src="./assets/images/love.png"
+              /><img src="./assets/images/clap.png" />
+              <span class="liked__users">Abhinav Mishra and 75 others</span>
+            </div>
+            <div>
+              <span>22 comments &middot; 40 shares </span>
+            </div>
+          </div>
+          <!-- todo  __________ post-activity _________   -->
+          <div class="post__activity">
+            <div>
+              <img
+                src="./assets/images/user-1.png"
+                class="post__activity__user__icon"
+              />
+              <img
+                src="./assets/images/down-arrow.png"
+                class="post__activity__arrow__icon"
+              />
+            </div>
+            <div class="post__activity__link">
+              <img src="./assets/images/like.png" />
+              <span>Like</span>
+            </div>
+            <div class="post__activity__link">
+              <img src="./assets/images/comment.png" />
+              <span>Comment</span>
+            </div>
+            <div class="post__activity__link">
+              <img src="./assets/images/share.png" />
+              <span>Share</span>
+            </div>
+            <div class="post__activity__link">
+              <img src="./assets/images/send.png" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post__author">
+            <img src="./assets/images/user-5.png" />
+            <div>
+              <h1>Martin lewis</h1>
+              <small>Founder and CEO at Gellelio Group | Angel Invester</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>
+            Success is the state or condition of meeting a defined range of
+            expectations. It may be viewed as the opposite of failure. The
+            criteria for success depend on context, and may be relative to a
+            particular observer or belief system. One person might consider a
+            success what another person considers a failure, particularly in
+            cases of direct competition or a zero-sum game.
+          </p>
+          <img src="./assets/images/post-image-4.png" width="100%" />
+          <!-- todo  __________ post-status _________   -->
+
+          <div class="post__status">
+            <div>
+              <img src="./assets/images/thumbsup.png" /><img
+                src="./assets/images/love.png"
+              /><img src="./assets/images/clap.png" />
+              <span class="liked__users">Abhinav Mishra and 75 others</span>
+            </div>
+            <div>
+              <span>22 comments &middot; 40 shares </span>
+            </div>
+          </div>
+          <!-- todo  __________ post-activity _________   -->
+          <div class="post__activity">
+            <div>
+              <img
+                src="./assets/images/user-5.png"
+                class="post__activity__user__icon"
+              />
+              <img
+                src="./assets/images/down-arrow.png"
+                class="post__activity__arrow__icon"
+              />
+            </div>
+            <div class="post__activity__link">
+              <img src="./assets/images/like.png" />
+              <span>Like</span>
+            </div>
+            <div class="post__activity__link">
+              <img src="./assets/images/comment.png" />
+              <span>Comment</span>
+            </div>
+            <div class="post__activity__link">
+              <img src="./assets/images/share.png" />
+              <span>Share</span>
+            </div>
+            <div class="post__activity__link">
+              <img src="./assets/images/send.png" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ! right-sidebar -->
+      <div class="right__sidebar">
+        <!-- todo  __________sidebar__news________ -->
+        <div class="sidebar__news">
+          <img src="./assets/images/more.png" class="info__icon" />
+          <h3>Trending News</h3>
+          <a href="#">High demand for skilled manpower</a>
+          <span>1d ago &middot; 10,934 readers</span>
+          <a href="#">Careers growing horizontally too</a>
+          <span>19d ago &middot; 27,290 readers</span>
+          <a href="#">Less work visa for US, more for UK</a>
+          <span>18h ago &middot; 15,876 readers</span>
+          <a href="#">More hiring = higher confidence?</a>
+          <span>10h ago &middot; 8,204 readers</span>
+          <a href="#">Gautam Adani is the world's third richest</a>
+          <span>10d ago &middot; 4,205 readers</span>
+          <a href="#" class="read__more__link">Read More</a>
+        </div>
+        <!-- todo _________sidebar__add__________  -->
+        <div class="right__sidebar__ad">
+          <small>Ad &middot; &middot; &middot;</small>
+          <p>Master the 5 principles of web design</p>
+          <div class="">
+            <img src="./assets/images/gowtham-profile.png" />
+            <img src="./assets/images/mi-logo.png" />
+          </div>
+          <b>Brand and Demand in Xiaomi</b>
+          <a href="#" class="right__sidebar__ad__link">Learn More</a>
+        </div>
+        <!-- todo ____ right_sidebar_useful_link  ___ -->
+        <div class="right__sidebar__useful__links">
+          <a href="#">About</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Help Center</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Advertising</a>
+          <a href="#">Get the App</a>
+          <a href="#">More</a>
+          <!-- todo ______copyright__msg______ -->
+          <div class="copyright-msg">
+            <img src="./assets/images/logo.png" />
+            <p>Linkedup &#169; 2024. All right reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

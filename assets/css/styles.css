@@ -1,0 +1,967 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    color: #5f5f5f;
+}
+
+a {
+    text-decoration: none;
+    color: #5f5f5f;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 6px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 30px;
+    margin-right: 15px;
+    display: block;
+}
+
+.navbar__center ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar__center ul li a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 5px 8px;
+    padding-right: 5px;
+    position: relative;
+}
+
+.navbar__center ul li a::after {
+    content: '';
+    /* width: 100%; */
+    width: 0;
+    height: 2px;
+    background: #045be6;
+    position: absolute;
+    bottom: -15px;
+    transition: width 0.3s;
+}
+
+.navbar__center ul li a:hover::after,
+.navbar__center ul li a.active__link::after {
+    width: 100%;
+}
+
+.navbar__center ul li a img {
+    width: 30px;
+}
+
+.nav__profile__img {
+    width: 40px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.online {
+    position: relative;
+}
+
+.online::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    right: 0px;
+    top: 0px;
+    background: #41db51;
+    position: absolute;
+}
+
+.search__box {
+    background: #f0f2f5;
+    width: 250px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.navbar__left {
+    display: flex;
+    align-items: center;
+}
+
+.search__box img {
+    width: 20px;
+}
+
+.search__box input {
+    width: 100%;
+    background: transparent;
+    padding: 8px;
+    outline: none;
+    border: 0;
+}
+
+/* ! _______________ navbar end _______________ */
+
+.container {
+    padding: 20px 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* !  - - - - - - - left-sidebar - - - - - - */
+
+.left__sidebar {
+    flex-basis: 25%;
+    align-self: flex-start;
+    position: sticky;
+    top: 70px;
+}
+
+
+.sidebar__profile__box {
+    background: #fff;
+}
+
+.sidebar__profile__info {
+    padding: 0 25px;
+}
+
+.sidebar__profile__info img {
+    width: 90px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 4px;
+    margin-top: -45px;
+}
+
+.sidebar__profile__info h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+}
+
+.sidebar__profile__info ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.sidebar__profile__info ul li {
+    width: 100%;
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+.sidebar__profile__info ul li span {
+    float: right;
+    color: #045be6;
+}
+
+.sidebar__profile__link {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+}
+
+.sidebar__profile__link a {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    font-size: 13px;
+    border-left: 1px solid #ccc;
+}
+
+.sidebar__profile__link a:first-child {
+    border-left: 0;
+}
+
+.sidebar__profile__link a img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* todo sidebar activity */
+
+.sidebar__activity {
+    background: #fff;
+    padding: 5px 25px;
+    margin: 12px 0;
+}
+
+.sidebar__activity h3 {
+    color: #777;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+
+.sidebar__activity a {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #888;
+    margin: 3px 0;
+}
+
+.sidebar__activity a img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.discover__more__link {
+    border-top: 1px solid #ccc;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+.discover__more__link a {
+    color: #045be6;
+    display: inline-block;
+    margin-top: 10px 0;
+    padding: 10px;
+}
+
+/* ! - - - - - - Right sidebar start - - - - - - */
+
+.right__sidebar {
+    flex-basis: 25%;
+    align-self: flex-start;
+    position: sticky;
+    top: 70px;
+}
+
+.sidebar__news {
+    background: #fff;
+    padding: 10px 25px;
+}
+
+.info__icon {
+    width: 15px;
+    float: right;
+    margin-top: 15px;
+}
+
+.sidebar__news h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 10px 0 30px;
+}
+
+.sidebar__news a {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: -3px;
+}
+
+.sidebar__news span {
+    font-size: 12px;
+}
+
+.sidebar__news .read__more__link {
+    color: #045be6;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+/* todo _________sidebar add______ */
+
+.right__sidebar__ad {
+    background: #fff;
+    padding: 15px 25px;
+    text-align: center;
+    margin: 12px 0;
+    font-size: 12px;
+}
+
+.right__sidebar__ad img {
+    width: 60px;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+.right__sidebar__ad small {
+    float: right;
+    font-weight: 500;
+}
+
+.right__sidebar__ad p {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.right__sidebar__ad b {
+    display: block;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.right__sidebar__ad__link {
+    display: inline-block;
+    border: 1px solid #045be6;
+    border-radius: 30px;
+    padding: 5px 15px;
+    color: #045be6;
+    font-weight: 500;
+    margin: 20px auto 10px;
+}
+
+/* todo ____ right_sidebar_useful_link  ___ */
+
+.right__sidebar__useful__links {
+    padding: 15px 25px;
+    text-align: center;
+}
+
+.right__sidebar__useful__links a {
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+}
+
+.copyright-msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.copyright-msg img {
+    width: 18px;
+    margin-right: 4px;
+}
+
+/* ! - - - - - - Right sidebar end - - - - - - */
+
+
+
+/*  ! - - - - - - - main-content - - - - - - */
+
+.main__content {
+    flex-basis: 47%;
+}
+
+/* todo  ______ create post __________ */
+
+.create__post {
+    background: #fff;
+}
+
+.create__post__input {
+    padding: 20px 25px 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.create__post__input img {
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.create__post__input textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    background: transparent;
+    margin-top: 8px;
+}
+
+::placeholder {
+    font-weight: 500;
+}
+
+/* todo  ______ create post links __________ */
+
+
+.create__post__links {
+    display: flex;
+    align-items: flex-start;
+}
+
+.create__post__links li {
+    list-style: none;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    flex-basis: 25%;
+    height: 40px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.create__post__links li img {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.create__post__links li:last-child {
+    background: #045be6;
+    color: #fff;
+    border-top: 0;
+    border-right: 0;
+}
+
+/* todo  __________sort by_________  */
+
+.sort__by {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.sort__by hr {
+    flex: 1;
+    border: 0;
+    height: 1px;
+    background: #ccc;
+}
+
+.sort__by p {
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+.sort__by p span {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.sort__by p span img {
+    width: 12px;
+    margin-left: 3px;
+}
+
+/* todo  __________ post _________  */
+
+.post {
+    background: #fff;
+    padding: 20px 25px 5px;
+    margin: 5px 0 15px;
+}
+
+.post__author {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.post__author img {
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+
+.post__author h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.post__author small {
+    display: block;
+    margin-bottom: -2px;
+}
+
+.post p {
+    font-size: 14px;
+    margin-bottom: -2px;
+    padding-bottom: 10px;
+}
+
+.post__status {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 6px;
+}
+
+.post__status div {
+    display: flex;
+    align-items: center;
+}
+
+.post__status img {
+    width: 15px;
+    margin-right: -5px;
+}
+
+.liked__users {
+    margin-left: 10px;
+}
+
+/* todo  __________ post-activity _________   --> */
+
+.post__activity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.post__activity div {
+    display: flex;
+    align-items: center;
+}
+
+.post__activity__user__icon {
+    width: 22px;
+    border-radius: 50%;
+}
+
+.post__activity__arrow__icon {
+    width: 12px;
+    margin-left: 5px;
+}
+
+.post__activity__link img {
+    width: 18px;
+    margin-right: 8px;
+}
+
+/*  ! - - - - - - - main-content-end - - - - - - */
+
+
+/* todo ________________ profile dropdown menu ________________  */
+
+.profile__menu__wrap {
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    width: 320px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.profile__menu__wrap.open__menu {
+    max-height: 400px;
+}
+
+.profile__menu {
+    /* background: aliceblue;
+    color: #000; */
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+
+.user__info {
+    display: flex;
+    align-items: center;
+}
+
+.user__info img {
+    width: 50px;
+    /* border-radius: 50%; */
+    margin-right: 15px;
+}
+
+.user__info h3 {
+    font-weight: 500;
+    margin-bottom: -2px;
+}
+
+.user__info a {
+    color: #c9dbf8;
+    font-size: 13px;
+}
+
+.profile__menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #fff;
+    margin: 15px 0 10px;
+}
+
+.profile__menu__link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin: 12px;
+    font-size: 14px;
+}
+
+.profile__menu__link p {
+    width: 100%;
+}
+
+.profile__menu__link img {
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* ! ________________ Profile Section _______________ */
+
+.profile__main {
+    flex-basis: 73%;
+}
+
+.profile__sidebar {
+    flex-basis: 25%;
+    align-self: flex-start;
+    position: sticky;
+    top: 73px;
+}
+
+.profile__container {
+    background: #fff;
+}
+
+.profile__container__inner {
+    padding: 0 4% 10px;
+}
+
+.profile__pic {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: -85px;
+    padding: 5px;
+    background: #fff;
+}
+
+.profile__container h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #222;
+}
+
+.profile__container b {
+    font-weight: 500;
+}
+
+.profile__container p {
+    margin-top: 5px;
+}
+
+.profile__container p a {
+    color: #045be6;
+    font-weight: 500;
+}
+
+/* todo ____________ Mutual section ___________ */
+
+.mutual__connection {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.mutual__connection img {
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+/* todo ____________ profile btn ___________ */
+
+.profile__btn {
+    margin: 20px 0;
+}
+
+.profile__btn a {
+    display: inline-flex;
+    align-items: center;
+    background: #e4e6eb;
+    padding: 6px 15px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.profile__btn a img {
+    width: 18px;
+    margin-right: 5px;
+}
+
+.profile__btn .primary-btn {
+    background: #0551ca;
+    color: #fff;
+}
+
+
+/* todo ____________ profile description ___________ */
+
+
+.profile__description {
+    background: #fff;
+    padding: 20px 4% 30px;
+    margin: 12px 0;
+}
+
+.profile__description h2 {
+    color: #333;
+    margin: 10px 0 20px;
+    font-weight: 600;
+}
+
+.see__more__link {
+    display: block;
+    text-align: right;
+    font-size: 15px;
+}
+
+.profile__desc__row {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.profile__desc__row img {
+    width: 50px;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+
+.profile__desc__row div {
+    width: 100%;
+}
+
+.profile__desc__row h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.profile__desc__row b {
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.profile__desc__row p {
+    margin-top: 8px;
+}
+
+.profile__desc__row hr {
+    border: 0;
+    border-bottom: 1px solid #999;
+    margin-top: 10px;
+}
+
+.experience__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    font-weight: 500;
+}
+
+.experience__link img {
+    width: 20px;
+    margin-left: 8px;
+}
+
+.skills__btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 6px 18px;
+    border: 1px solid #777;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.language__btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 6px 18px;
+    background: #e4e6eb;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* todo ______________ profile right sidebar ___________ */
+
+.profile__right__sidebar .right__sidebar__ad {
+    margin: 0;
+}
+
+.right__sidebar__people {
+    background: #fff;
+    padding: 15px 25px;
+    margin: 12px 0;
+    font-size: 12px;
+}
+
+.right__sidebar__people h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0 2px;
+}
+
+.right__sidebar__people__row {
+    display: flex;
+    align-items: flex-start;
+    margin: 6px 0;
+}
+
+.right__sidebar__people__row img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+.right__sidebar__people__row h2 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.right__sidebar__people__row a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px 25px;
+    border: 1px solid #5f5f5f;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+/* ! todo ______________ profile footer ___________  */
+
+.profile__footer {
+    padding: 0 6% 30px;
+}
+
+.profile__footer .right__sidebar__useful__links {
+    text-align: left;
+    padding: 0;
+}
+
+.profile__footer .copyright-msg {
+    justify-content: flex-start;
+}
+
+
+
+#showMoreLink {
+    display: none;
+}
+
+/* ! ________________ media query for small screen __________________ */
+
+
+@media only screen and (max-width: 600px) {
+    .search__box {
+        background: transparent;
+        width: auto;
+        padding: 0;
+    }
+
+    .search__box input {
+        width: 0;
+        padding: 0;
+    }
+
+    .navbar__center ul li a span {
+        display: none;
+    }
+
+    .navbar__center ul li a {
+        padding-right: 0;
+        margin: 5px;
+    }
+
+    .nav__profile__img {
+        width: 30px;
+    }
+
+    .container {
+        padding: 15px 3%;
+    }
+
+    .left__sidebar,
+    .right__sidebar {
+        flex-basis: 100%;
+        position: relative;
+        top: unset;
+    }
+
+    .main__content {
+        flex-basis: 100%;
+    }
+
+    .post__status div {
+        margin: 2px 0;
+    }
+
+    .post__activity__link span {
+        display: none;
+    }
+
+    .post__activity__link img {
+        margin-right: 0;
+    }
+
+    .profile__main,
+    .profile__right__sidebar {
+        flex-basis: 100%;
+    }
+
+    .profile__container {
+        font-size: 14px;
+    }
+
+    .profile__pic {
+        width: 100px;
+        margin-top: -50px;
+    }
+
+    .profile__description {
+        font-size: 14px;
+    }
+
+    #showMoreLink {
+        display: block;
+        width: fit-content;
+        margin: 10px auto;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .sidebar__activity {
+        display: none;
+    }
+
+    .sidebar__activity.open__activity {
+        display: block;
+    }
+}

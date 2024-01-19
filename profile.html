@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- ! Navbar start -->
+    <nav class="navbar">
+      <!-- todo  ________ navbar left ________ -->
+      <div class="navbar__left">
+        <a href="index.html" class="logo">
+          <img src="./assets/images/linkedinlogo.png" />
+        </a>
+        <div class="search__box">
+          <img src="./assets/images/magnifier_search_zoom_icon.png" alt="" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+      <!-- todo  ________ navbar center ________ -->
+      <div class="navbar__center">
+        <ul>
+          <li>
+            <a href="#" class="active__link"
+              ><img src="./assets/images/home.png" /><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/images/network.png" /><span
+                >My Network</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/images/jobs.png" /><span> Jobs </span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/images/message.png" /><span>
+                Messaging</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/images/notification.png" /><span>
+                Notifications
+              </span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- todo  ________ navbar right ________ -->
+      <div class="navbar__right">
+        <div class="online">
+          <img
+            src="./assets/images/gowtham-profile.png"
+            class="nav__profile__img"
+            onclick="toggleMenu()"
+          />
+        </div>
+      </div>
+      <!-- todo  ________ profile dropdown menu ________ -->
+      <div class="profile__menu__wrap" id="profileMenu">
+        <div class="profile__menu">
+          <div class="user__info">
+            <img src="./assets/images/gowtham-profile.png" />
+            <div>
+              <h3>Gowtham</h3>
+              <a href="#">See your profile</a>
+            </div>
+          </div>
+          <hr />
+          <a href="#" class="profile__menu__link">
+            <img src="./assets/images/feedback.png" />
+            <p>Give Feedback</p>
+            <span> > </span>
+          </a>
+          <a href="#" class="profile__menu__link">
+            <img src="./assets/images/setting.png" />
+            <p>Settings & privacy</p>
+            <span> > </span>
+          </a>
+          <a href="#" class="profile__menu__link">
+            <img src="./assets/images/help.png" />
+            <p>Help & Support</p>
+            <span> > </span>
+          </a>
+          <a href="#" class="profile__menu__link">
+            <img src="./assets/images/display.png" />
+            <p>Display & Accessibility</p>
+            <span> > </span>
+          </a>
+          <a href="index.html" class="profile__menu__link">
+            <img src="./assets/images/logout.png" />
+            <p>Logout</p>
+            <span> > </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- ! Navbar end -->
+    <!-- ! ______________ Profile Section _______________ -->
+    <div class="container">
+      <!-- todo ______________ Profile Main  _______________ -->
+      <div class="profile__main">
+        <div class="profile__container">
+          <img src="./assets/images/profile-cover.png" width="100%" />
+          <div class="profile__container__inner">
+            <img
+              src="./assets/images/gowtham-profile.png"
+              class="profile__pic"
+            />
+            <h1>Gowtham</h1>
+            <b>Fullstack Engineer at DreamCorp</b>
+            <p>
+              Ramanathapuram, TamilNadu, India &middot;
+              <a href="#">Contact Info </a>
+            </p>
+            <!-- todo __________ Mutual section ________ -->
+            <div class="mutual__connection">
+              <img src="./assets/images/user-4.png" />
+              <span>1 mutual connection: Helen marks</span>
+            </div>
+            <!-- todo __________ Profile Button ________ -->
+            <div class="profile__btn">
+              <a href="#" class="primary-btn">
+                <img src="./assets/images/connect.png" />
+                Connect
+              </a>
+              <a href="#">
+                <img src="./assets/images/chat.png" alt="" />
+                Message
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- todo __________ about description  ________ -->
+        <div class="profile__description">
+          <h2>About</h2>
+          <p>
+            The success of every websites depends on Search engine optimization
+            is a solid set of guidelines for website success and visibility. As
+            with all areas of technology, it keeps going through frequent
+            changes and refinements to improve overall performance. It’s vital
+            you maintain its practices if you want to remain successful.
+          </p>
+          <a href="#" class="see__more__link">See more...</a>
+        </div>
+        <!-- todo __________ experience description  ________ -->
+        <div class="profile__description">
+          <h2>Experience</h2>
+          <div class="profile__desc__row">
+            <img src="./assets/images/google.png" />
+            <div>
+              <h3>Lead Front-End Developer</h3>
+              <b>Google &middot; Full time </b>
+              <b>Feb 2021 - Past &middot; 1.5 years</b>
+              <p>
+                Computer programming or coding is the composition of sequences
+                of instructions, called programs, that computers can follow to
+                perform tasks. It involves designing and implementing
+                algorithms, step-by-step specifications of procedures, by
+                writing code in one or more programming languages.
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div class="profile__desc__row">
+            <img src="./assets/images/microsoft.png" />
+            <div>
+              <h3>Web Developer</h3>
+              <b>Microsoft &middot; Full time </b>
+              <b>may 2018 - jan 2021 Past &middot; 2 years</b>
+              <p>
+                Computer programming or coding is the composition of sequences
+                of instructions, called programs, that computers can follow to
+                perform tasks. It involves designing and implementing
+                algorithms, step-by-step specifications of procedures, by
+                writing code in one or more programming languages.
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div class="profile__desc__row">
+            <img src="./assets/images/slack.png" />
+            <div>
+              <h3>Fullstack Developer</h3>
+              <b>Slack &middot; Full time </b>
+              <b>sep 2015 - may 2018 Past &middot; 3 years</b>
+              <p>
+                Computer programming or coding is the composition of sequences
+                of instructions, called programs, that computers can follow to
+                perform tasks. It involves designing and implementing
+                algorithms, step-by-step specifications of procedures, by
+                writing code in one or more programming languages.
+              </p>
+            </div>
+          </div>
+          <hr />
+          <a href="#" class="experience__link"
+            >Show all 7 experiences
+            <img src="./assets/images/right-arrow.png" alt=""
+          /></a>
+        </div>
+        <!-- todo _________ Education description _________ -->
+        <div class="profile__description">
+          <h2>Education</h2>
+          <div class="profile__desc__row">
+            <img src="./assets/images/anna-university.png" />
+            <div>
+              <h3>Anna University</h3>
+              <b>B.Tech, Information Technology</b>
+              <b>2018 - 2022</b>
+              <hr />
+            </div>
+          </div>
+
+          <div class="profile__desc__row">
+            <img src="./assets/images/stanford.png" />
+            <div>
+              <h3>Stanford University</h3>
+              <b>Computer Science</b>
+              <b>2015 - 2018</b>
+              <hr />
+            </div>
+          </div>
+
+          <div class="profile__desc__row">
+            <img src="./assets/images/mit.png" />
+            <div>
+              <h3>Harvard University</h3>
+              <b>Senior High School</b>
+              <b>2005-2015</b>
+              <hr />
+            </div>
+          </div>
+
+          <div class="profile__desc__row">
+            <img src="./assets/images/north.png" />
+            <div>
+              <h3>Northern University</h3>
+              <b>Artificial Intelligence & Machine learning</b>
+              <b>2014-2015</b>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <!-- todo _________ skills description _________ -->
+        <div class="profile__description">
+          <h2>Skills</h2>
+          <a href="#" class="skills__btn">LeaderShip</a>
+          <a href="#" class="skills__btn">Web Design</a>
+          <a href="#" class="skills__btn">Development</a>
+          <a href="#" class="skills__btn">Communication</a>
+          <a href="#" class="skills__btn">UI/UX</a>
+          <a href="#" class="skills__btn">Planning</a>
+          <a href="#" class="skills__btn">Coding</a>
+          <a href="#" class="skills__btn">Javascript</a>
+          <a href="#" class="skills__btn">Nodejs</a>
+          <a href="#" class="skills__btn">python</a>
+        </div>
+        <!-- todo _________ language description _________ -->
+        <div class="profile__description">
+          <h2>Languages</h2>
+          <a href="#" class="language__btn">English</a>
+          <a href="#" class="language__btn">Tamil</a>
+        </div>
+      </div>
+      <!-- todo ______________ Profile sidebar  _______________ -->
+      <div class="profile__right__sidebar">
+        <!-- todo ______________ right sidebar ad ___________ -->
+        <div class="right__sidebar__ad">
+          <small>Ad &middot; &middot; &middot;</small>
+          <p>Master the 5 principles of web design</p>
+          <div class="">
+            <img src="./assets/images/gowtham-profile.png" />
+            <img src="./assets/images/mi-logo.png" />
+          </div>
+          <b>Brand and Demand in Xiaomi</b>
+          <a href="#" class="right__sidebar__ad__link">Learn More</a>
+        </div>
+        <!-- todo ______________ right sidebar people ___________ -->
+        <div class="right__sidebar__people">
+          <h3>People you may know</h3>
+          <div class="right__sidebar__people__row">
+            <img src="./assets/images/user-3.png" />
+            <div>
+              <h2>Samuel Tony</h2>
+              <p>Head of marketing at alibaba</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+          <div class="right__sidebar__people__row">
+            <img src="./assets/images/user-4.png" />
+            <div>
+              <h2>Benjamin Leo</h2>
+              <p>Head of marketing at alibaba</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+          <div class="right__sidebar__people__row">
+            <img src="./assets/images/user-5.png" />
+            <div>
+              <h2>Martin Lewis</h2>
+              <p>Head of marketing at alibaba</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+          <div class="right__sidebar__people__row">
+            <img src="./assets/images/user-1.png" />
+            <div>
+              <h2>clarence George</h2>
+              <p>Head of marketing at alibaba</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+          <div class="right__sidebar__people__row">
+            <img src="./assets/images/user-2.png" />
+            <div>
+              <h2>steve Grey</h2>
+              <p>Head of marketing at alibaba</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- todo ______________ profile footer ___________ -->
+    <div class="profile__footer">
+      <div class="right__sidebar__useful__links">
+        <a href="#">About</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Help Center</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Advertising</a>
+        <a href="#">Get the App</a>
+        <a href="#">More</a>
+        <!-- todo ______copyright__msg______ -->
+        <div class="copyright__msg">
+          <img src="./assets/images/logo.png" style="height: 20px" />
+          <p>Linkedup &#169; 2024. All right reserved</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      let profileMenu = document.getElementById("profileMenu");
+      function toggleMenu() {
+        profileMenu.classList.toggle("open__activity");
+      }
+    </script>
+  </body>
+</html>
